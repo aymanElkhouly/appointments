@@ -142,7 +142,7 @@
         height: 20px;
     }
 .content-box{
-    min-height: calc(100vh - 385px);
+    min-height: calc(100vh - 390px);
 }
     .main-footer {
         position: relative;

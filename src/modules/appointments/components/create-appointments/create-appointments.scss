@@ -1,0 +1,22 @@
+.create-appointments{
+  //width: 100%;
+  width: 320px;
+  background-color: white;
+  box-shadow: 1px -1px 7px #00000085;
+  border-radius: 5px;
+  padding: 5px;
+  .center{
+    /*height: 80px;
+    width: 300px;
+    background-color: #f7f9fc;
+    color:#909bb3;*/
+  }
+  .providers{
+    width: 30px;
+    height: 30px;
+  }
+  .custom-select{
+    background-color: #f7f9fc;
+    color:#909bb3;
+  }
+}
