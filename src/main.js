@@ -10,9 +10,10 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-let modules = [Vuex,axios,VueAxios,BootstrapVue,IconsPlugin];
+Vue.prototype.$http = axios;
+
+let modules = [axios,Vuex,VueAxios,BootstrapVue,IconsPlugin];
 modules.forEach((module) => Vue.use(module));
-//Vue.use(Vuex,axios,VueAxios,BootstrapVue,IconsPlugin);
 
 Vue.config.productionTip = false
 
