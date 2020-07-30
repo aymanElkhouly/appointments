@@ -16,6 +16,11 @@
             <router-link to="/">Home</router-link>
             |
             <router-link to="/about">About</router-link>
+            |
+            <router-link to="/appointments/my-appointments">my-appointments</router-link>
+            |
+            <router-link to="/appointments">appointments</router-link>
+
         </div>
         <div class="container content-box">
             <router-view/>

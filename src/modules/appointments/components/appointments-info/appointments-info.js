@@ -3,14 +3,14 @@ export default {
     name: "appointments-info",
     data() {
         return {
-
+           tabsClasses:[]
         }
     },
     created(){
 
     },
     mounted(){
-
+      console.log("Active Component");
     },
     methods:{
 

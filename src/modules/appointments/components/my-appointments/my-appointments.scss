@@ -1,0 +1,17 @@
+.my-appointments{
+  .nav-tabs{
+    .nav-link{
+      color: #7a7a7a;
+    }
+    .nav-link.active{
+      color:#006aa6;
+      border-color: transparent;
+      background-color: unset;
+      border-bottom: 1.5px solid #006aa6;
+    }
+  }
+  .overflow-content{
+    height: calc(100vh - 215px);
+    overflow-y: auto;
+  }
+}

@@ -5,7 +5,7 @@
         </div>
         <div class="col-lg-8 col-sm-12 service-overview my-2 p-0">
             <img alt="background" class="w-100" src="@/assets/book-appointment@3x.jpg">
-            <div v-if="selectedCenter.id">
+            <div v-if="selectedCenter && selectedCenter.id">
                 <div class="p-2" >
                     <p class="text-left title mt-2">{{selectedCenter.name}}</p>
                     <div class="mt-2 text-left">

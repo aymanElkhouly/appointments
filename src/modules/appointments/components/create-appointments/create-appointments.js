@@ -15,9 +15,12 @@ export default {
     },
     mounted(){
         this.service.getMedicalServices().then(res =>{
-            console.log("REsponse From json",res)
+            console.log("Response From json",res)
             this.medicalCenters = res.data.medical_centers;
         })
+    },
+    destroyed(){
+        this.$store.dispatch("setActiveCenter",null);
     },
     methods:{
         selectCenter(){
