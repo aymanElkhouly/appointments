@@ -10,14 +10,15 @@ export default {
     },
     data() {
         return {
-            component:AppointmentsInfo
+            component:AppointmentsInfo,
+            pageTitle:"My Appointments"
         }
     },
-    created(){
-
-    },
     mounted(){
-
+        this.$store.dispatch("setPageTitle",this.pageTitle);
+    },
+    destroyed(){
+        this.$store.dispatch("setPageTitle","");
     },
     methods:{
 

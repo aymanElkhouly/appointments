@@ -21,7 +21,6 @@ export default {
     },
     mounted(){
         this.service.getMedicalServices().then(res =>{
-            console.log("Response From json",res)
             this.medicalCenters = res.data.medical_centers;
         })
     },

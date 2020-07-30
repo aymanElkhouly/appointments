@@ -1,18 +1,18 @@
 <template>
 <div>
-    <appointments-navbar></appointments-navbar>
-    <div class="mt-3">
+    <module-header></module-header>
+    <div class="mt-3 container">
         <router-view/>
     </div>
 </div>
 </template>
 
 <script>
-    import appointmentsNavbar from './global/appointmentsNavbar/appointmentsNavbar.vue'
+    import moduleHeader from './global/moduleHeader/moduleHeader.vue'
     export default {
         name: "index",
-        comments:{
-            appointmentsNavbar
+        components:{
+            moduleHeader
         },
         data() {
             return {

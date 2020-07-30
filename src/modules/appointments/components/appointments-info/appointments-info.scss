@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap');
-$base-color: #f4f4f4;
-$base-font-color: #4a4a4a;
-$cyan-color: #05aec7;
-$base-font: IBM Plex Sans;
-
 .appointments-info{
+  font-family: $base-font;
+  color: $base-font-color;
   .item{
     min-height: 200px;
     height: auto;
@@ -20,7 +16,7 @@ $base-font: IBM Plex Sans;
       background-color: #d7e2e8;
       border-radius: 5px 5px 0 0;
       color: #646f86;
-      font: 500 16px/30px $base-font;
+      font: $medium-font 16px/30px $base-font;
       letter-spacing: 0px;
       line-height: 1.22;
       vertical-align:bottom;
@@ -29,7 +25,7 @@ $base-font: IBM Plex Sans;
     .content{
       .title{
         color: #000000;
-        font: 500 24px/30px $base-font;
+        font: $medium-font 24px/30px $base-font;
       }
       .thumb{
         width: 100%;
@@ -37,7 +33,7 @@ $base-font: IBM Plex Sans;
       }
       .address{
         color: #6d778d;
-        font: 500 16px/30px $base-font;
+        font: $medium-font 16px/30px $base-font;
         line-height: 1.22;
         vertical-align:bottom;
       }

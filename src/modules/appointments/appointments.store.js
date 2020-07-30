@@ -2,7 +2,8 @@
 export default {
     state: {
         appointments:[],
-        selectedCenter:{}
+        selectedCenter:{},
+        pageTitle:""
     },
     mutations: {
         bookAppointment(state,payload){
@@ -10,6 +11,9 @@ export default {
         },
         setActiveCenter(state,payload){
             state.selectedCenter = payload;
+        },
+        setPageTitle(state,payload){
+            state.pageTitle = payload;
         }
     },
     actions: {
@@ -18,6 +22,9 @@ export default {
         },
         setActiveCenter({commit},payload){
             commit('setActiveCenter', payload);
+        },
+        setPageTitle({commit},payload){
+            commit('setPageTitle', payload);
         }
     },
     getters: {
@@ -26,6 +33,9 @@ export default {
         },
         getSelectedCenter(state){
             return state.selectedCenter;
+        },
+        getPageTitle(state){
+            return state.pageTitle;
         }
     }
 }

@@ -28,5 +28,15 @@ module.exports = {
                 "@": path.resolve(__dirname, 'src/')
             }
         }
-    }
+    },
+    css: {
+        loaderOptions: {
+            sass: {
+                prependData: `
+                @import "@/stylesheets/variables.scss";
+                @import "@/stylesheets/mixins.scss";
+                `
+            },
+        },
+    },
 };

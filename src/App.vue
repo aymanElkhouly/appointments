@@ -12,6 +12,30 @@
                 </div>
             </div>
         </header>
+        <div class="nav-links">
+            <b-navbar toggleable="md" type="light" variant="light">
+                <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
+                <b-navbar-brand href="#">
+                    <img class="nav-brand-img" src="@/assets/trudoc@2x.png" alt="company">
+                </b-navbar-brand>
+                <b-collapse id="nav-text-collapse" is-nav>
+                    <b-navbar-nav class="ml-auto">
+                        <b-nav-text class="mx-2">
+                            <router-link to="/appointments">Home</router-link>
+                        </b-nav-text>
+                        <b-nav-text class="mx-2">
+                            <router-link to="/appointments/my-appointments">My Appointments</router-link>
+                        </b-nav-text>
+                        <b-nav-text class="mx-2">
+                            <a>About us</a>
+                        </b-nav-text>
+                        <b-nav-text class="mx-2">
+                            <a>Contact us</a>
+                        </b-nav-text>
+                    </b-navbar-nav>
+                </b-collapse>
+            </b-navbar>
+        </div>
         <div id="nav" class="mt-5">
             <router-link to="/">Home</router-link>
             |
@@ -22,7 +46,7 @@
             <router-link to="/appointments">appointments</router-link>
 
         </div>
-        <div class="container content-box">
+        <div class="content-box">
             <router-view/>
         </div>
         <footer class="main-footer">
@@ -102,13 +126,26 @@
 </template>
 
 <style lang="scss">
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap');
-    $base-color: #f4f4f4;
-    $base-font-color: #4a4a4a;
-    $cyan-color: #05aec7;
-    $base-font: IBM Plex Sans;
 
-    #app {
+
+    .nav-links{
+        margin-top: 60px;
+        .navbar-light{
+            .navbar-text a {
+                font-weight: bold;
+                color: #474747;
+
+                &.router-link-exact-active {
+                    color: #40c1ac;
+                }
+            }
+        }
+    }
+    .nav-brand-img{
+        width: 170px;
+        height: 60px;
+    }
+/*    #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -129,24 +166,21 @@
             }
         }
     }
-
     .header-content {
         width: 100%;
         height: 60px;
         background-color: #084971;
         color: #FFFFFF;
     }
-
     .avatar {
         width: 50px;
         height: 50px;
     }
-
     .small-icon{
         width: 20px;
         height: 20px;
     }
-.content-box{
+    .content-box{
     min-height: calc(100vh - 390px);
 }
     .main-footer {
@@ -175,6 +209,6 @@
         .logo{
             width: 80%;
         }
-    }
+    }*/
 
 </style>

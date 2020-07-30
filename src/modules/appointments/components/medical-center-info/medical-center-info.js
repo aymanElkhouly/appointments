@@ -5,14 +5,14 @@ export default {
     components:{createAppointment},
     data() {
         return {
-
+          pageTitle:"Book an Appointments"
         }
     },
-    created(){
-
-    },
     mounted(){
-
+        this.$store.dispatch("setPageTitle",this.pageTitle);
+    },
+    destroyed(){
+        this.$store.dispatch("setPageTitle","");
     },
     methods:{
 

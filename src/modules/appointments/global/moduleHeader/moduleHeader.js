@@ -1,8 +1,8 @@
+import {mapGetters} from 'vuex'
 export default {
     name: "moduleHeader",
     data() {
         return {
-            pageTitle:"Ayman Elkhouly"
         }
     },
     created(){
@@ -14,4 +14,7 @@ export default {
     methods:{
 
     },
+    computed:{
+        ...mapGetters({pageTitle:'getPageTitle'})
+    }
 }
