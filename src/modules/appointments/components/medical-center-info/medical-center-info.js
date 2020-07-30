@@ -9,6 +9,7 @@ export default {
         }
     },
     mounted(){
+        // store page title to use it on header component //
         this.$store.dispatch("setPageTitle",this.pageTitle);
     },
     destroyed(){

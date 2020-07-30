@@ -1,12 +1,15 @@
 <template>
  <section class="appointments-info">
      <div v-for="item in getAppointments" :key="item.id" class="item my-2">
+         <!--Header-->
          <div class="header text-left justify-content-start align-items-center">
              <span class="mx-2">
                  <img alt="calender" class="rounded small-icon" src="@/assets/calender-white.svg"/>
              </span>
              <span>{{item.date}}</span>
          </div>
+
+         <!--Center Info Container-->
          <div class="content row m-0 p-3">
               <div class="col-lg-3 col-md-12">
                   <img alt="service" class="thumb" src="@/assets/book-appointment@3x.jpg"/>
@@ -25,6 +28,7 @@
                   </div>
               </div>
          </div>
+
      </div>
  </section>
 </template>

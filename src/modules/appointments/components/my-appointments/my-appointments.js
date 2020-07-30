@@ -1,6 +1,5 @@
 import createAppointment from '../create-appointments/create-appointments.vue'
 import AppointmentsInfo from '../appointments-info/appointments-info.vue'
-import {mapGetters} from 'vuex'
 
 export default {
     name: "my-appointments",
@@ -22,8 +21,5 @@ export default {
     },
     methods:{
 
-    },
-    computed:{
-        ...mapGetters(['getAppointments'])
     }
 }

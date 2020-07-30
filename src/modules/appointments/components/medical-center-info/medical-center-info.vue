@@ -1,8 +1,10 @@
 <template>
     <section class="booking row mb-5">
+        <!--Lift Side-->
         <div class="col-lg-4 col-sm-12 my-2">
             <createAppointment></createAppointment>
         </div>
+        <!--Right Side-->
         <div class="col-lg-8 col-sm-12 service-overview my-2 p-0">
             <img alt="background" class="w-100" src="@/assets/book-appointment@3x.jpg">
             <div v-if="selectedCenter && selectedCenter.id">
@@ -12,13 +14,13 @@
                         <span class="mx-1">
                             <img alt="" class="small-icon" src="@/assets/address-2.svg">
                         </span>
-                        <span class="text-left text-sm-left ml-1 mr-3">
+                        <span class="text-left small-titles ml-1 mr-3">
                           Address: {{selectedCenter.address}}
                         </span>
                         <span class="">
                            <img alt="" class="small-icon" src="@/assets/phone-2.svg">
                         </span>
-                        <span class="text-left text-sm-left mx-1">
+                        <span class="text-left small-titles mx-1">
                           {{selectedCenter.phone}}
                         </span>
                     </div>

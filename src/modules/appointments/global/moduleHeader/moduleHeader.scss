@@ -3,6 +3,9 @@
   height: 100px;
   background-color: #e5e9eb;
   color: #565d6b;
-  font: 500 24px/36px IBM Plex Sans;
+  font: $medium-font 24px/36px IBM Plex Sans;
   letter-spacing: 0px;
+  .wraper{
+    height: 100px;
+  }
 }
