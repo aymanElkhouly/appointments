@@ -5,7 +5,9 @@ export default {
         return {
             service:null,
             selectedCenter:null,
-            medicalCenters:[]
+            medicalCenters:[],
+            dateValue: null,
+            dateContext: null
         }
     },
     created(){
@@ -18,8 +20,19 @@ export default {
         })
     },
     methods:{
-        selectItem(item){
-          return item;
+        selectCenter(){
+            this.$store.dispatch("setActiveCenter",this.selectedCenter);
+        },
+        onContext(ctx) {
+            this.dateContext = ctx;
+        },
+        save(){
+            let data = {
+                center: this.selectedCenter,
+                date: this.dateValue,
+                time: "02:40pm"
+            }
+            this.$store.dispatch("bookAppointment",data);
         }
     }
 }

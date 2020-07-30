@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+$base-color: #f4f4f4;
+$base-font-color: #4a4a4a;
+$cyan-color: #05aec7;
+$base-font: IBM Plex Sans;
+
+.booking{
+  font-family: $base-font;
+  color: $base-font-color;
+  .small-icon{
+    width: 20px;
+    /*height: 15px;*/
+  }
+  .service-overview{
+    background-color: white;
+    box-shadow: 1px -1px 7px #00000085;
+    border-radius: 5px;
+    .title{
+      font: 500 25px/30px $base-font;
+      color: $base-font-color;
+    }
+  }
+}
+.under-line{
+  width: 100%;
+  border-bottom:1px solid lightgray;
+}

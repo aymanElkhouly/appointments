@@ -22,7 +22,7 @@
         </div>
         <footer class="main-footer">
             <div class="container-fluid">
-                <div class="row justify-content-center align-items-start p-3  mt-2">
+                <div class="row justify-content-center align-items-start p-5  mt-2">
                     <div class="col-sm-12 col-md-6 col-lg-3 text-left">
                         <div>
                             <img alt="logo" class="logo" src="@/assets/trudoc@2x.png"/>
@@ -39,7 +39,7 @@
                             </span>
                         </div>
                         <p class="mt-2 item-title">
-                            Copyright © 2020 TrueDoc All Rights Reserved.
+                            Copyright © 2020 TrueDoc.
                         </p>
                         <div>
 
@@ -66,7 +66,7 @@
                                <img alt="Address" class="rounded small-icon" src="@/assets/address-2.svg"/>
                             </span>
                             <span class="item-title">
-                                Address: Office Tahrir  district 51 block 4
+                                Address: District 51 block 4
                             </span>
                         </div>
                     </div>
