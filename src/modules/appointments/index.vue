@@ -1,17 +1,32 @@
 <template>
 <div>
-    <header></header>
-    <router-view/>
+    <appointments-navbar></appointments-navbar>
+    <div class="mt-3">
+        <router-view/>
+    </div>
 </div>
 </template>
 
 <script>
-    import header from "./shared/header/header.vue";
+    import appointmentsNavbar from './global/appointmentsNavbar/appointmentsNavbar.vue'
     export default {
         name: "index",
         comments:{
-            header
-        }
+            appointmentsNavbar
+        },
+        data() {
+            return {
+            }
+        },
+        created(){
+
+        },
+        mounted(){
+            console.log("Index Component");
+        },
+        methods:{
+
+        },
     }
 </script>
 

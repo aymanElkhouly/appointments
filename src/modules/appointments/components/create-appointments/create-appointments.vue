@@ -1,5 +1,6 @@
 <template>
 <section class="create-appointments d-flex flex-column align-items-center p-3">
+
     <div class="w-100">
         <h3 class="text-left">Make an Appointment</h3>
         <div class="center mt-4">
@@ -13,10 +14,18 @@
         </div>
         <div class="mt-3 text-left">
             <h5 class="text-left">Date</h5>
-            <b-calendar width="100%" v-model="dateValue" @context="onContext" locale="en-US"></b-calendar>
+            <b-calendar width="100%" size="sm" v-model="dateValue" @context="onContext" locale="en-US"></b-calendar>
         </div>
 
-        <b-button :disabled="!(selectedCenter && dateValue)" @click="save" class="mt-3" block variant="primary">Book Now</b-button>
+
+        <h5 class="text-left mt-2">Time</h5>
+        <div class="mt-3 row time-picker">
+            <div class="col-4" v-for="(time,idx) in timePicker" :key="idx" >
+               <a role="button" @click="setTime(time)">{{time}}</a>
+            </div>
+        </div>
+
+        <b-button :disabled="!(bookingTime&&selectedCenter && dateValue)" @click="save" class="mt-3" block variant="primary">Book Now</b-button>
 
     </div>
 

@@ -7,7 +7,13 @@ export default {
             selectedCenter:null,
             medicalCenters:[],
             dateValue: null,
-            dateContext: null
+            dateContext: null,
+            bookingTime:null,
+            timePicker:[
+                "02:15","02:30","02:45",
+                "03:15","03:30","03:45",
+                "04:15","04:30","04:45"
+            ]
         }
     },
     created(){
@@ -29,13 +35,26 @@ export default {
         onContext(ctx) {
             this.dateContext = ctx;
         },
+        setTime(time){
+            this.bookingTime = time;
+        },
         save(){
             let data = {
                 center: this.selectedCenter,
                 date: this.dateValue,
-                time: "02:40pm"
+                time: this.bookingTime
             }
-            this.$store.dispatch("bookAppointment",data);
+            this.$store.dispatch("bookAppointment",data)
+                .then(()=>{
+                    this.showAlert("success","appointment booked successfully");
+                })
+        },
+        showAlert(variant = null, message = null) {
+            this.$bvToast.toast(message, {
+                title:`${variant || 'success'}`,
+                variant: variant,
+                solid: false
+            })
         }
     }
 }
