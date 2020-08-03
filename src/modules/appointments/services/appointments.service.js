@@ -5,8 +5,8 @@ export default class RestResource {
    constructor() {
        // ** this for local host json file **//
        axios.create({
-           baseURL: 'https://aymanelkhouly.github.io/appointments/'
-           /*baseURL: 'http://localhost:8080/'*/
+           /*baseURL: 'https://aymanelkhouly.github.io/appointments/'*/
+           baseURL: 'http://localhost:8080/'
        })
    }
 
