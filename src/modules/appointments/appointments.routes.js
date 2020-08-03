@@ -3,7 +3,7 @@ import MyAppointments from './components/my-appointments/my-appointments.vue'
 
 export default [
     {
-        path: '*',
+        path: '',
         name: 'BookingAppointments',
         component: BookingAppointments,
         props: false,
@@ -16,5 +16,4 @@ export default [
         props: false,
         meta:{}
     },
-
 ]
