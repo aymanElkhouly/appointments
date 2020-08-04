@@ -29,7 +29,7 @@
 
                 <div class="services p-2">
                     <h5 class="text-left mt-3">Services</h5>
-                    <div class="d-flex flex-row justify-content-between m-3 px-4">
+                    <div class="d-flex flex-row justify-content-around m-3">
                         <div class="" v-for="item in selectedCenter.services" :key="item.id">
                             <img alt="" class="rounded-circle" src="@/assets/services.svg">
                             <h6 class="mt-2">{{item}}</h6>
