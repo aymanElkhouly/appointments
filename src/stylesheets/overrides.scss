@@ -1,0 +1,20 @@
+.create-appointments{
+  .b-calendar-grid-body{
+    .btn-primary {
+      &:not(:disabled) {
+        &:not(.disabled) {
+          &:active {
+            color: #fff;
+            background-color: #05aec7;
+            border-color: #005cbf;
+          }
+        }
+        &:not(.disabled).active {
+          color: #fff;
+          background-color: #05aec7;
+          border-color: #005cbf;
+        }
+      }
+    }
+  }
+}

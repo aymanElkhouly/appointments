@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export default class RestResource {
+class RestResource {
 
    constructor() {
        // ** this for local host json file **//
@@ -15,3 +15,7 @@ export default class RestResource {
     }
 
 }
+//** Singleton Service **//
+const appointmentsSources = new RestResource();
+
+export default appointmentsSources;

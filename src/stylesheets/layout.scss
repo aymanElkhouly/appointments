@@ -19,8 +19,8 @@
 }
 
 .header-content {
-  width: 100%;
-  height: 60px;
+  min-height: 60px;
+  height: auto;
   background-color: #084971;
   color: #FFFFFF;
 }

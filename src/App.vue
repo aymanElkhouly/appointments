@@ -2,13 +2,13 @@
     <div id="app">
         <!--Top Header-->
         <header class="fixed-top" role="navigation">
-            <div class="px-5 header-content d-flex flex-row  align-items-center">
-                <div>
+            <div class="px-5 header-content row align-items-center justify-content-around">
+                <div class="col d-flex justify-content-start align-items-center">
                     <img alt="hot line" class="rounded small-icon mx-3" src="@/assets/phone.svg"/>
                     <span>HotLine: 800725923</span>
                 </div>
-                <div class="ml-auto">
-                    <span>Eva Mourage</span>
+                <div class="col d-flex justify-content-end align-items-center">
+                    <span class="mx-2">Eva</span>
                     <img alt="Profile image" class="rounded avatar mx-2" src="@/assets/profiel-img@2x.png"/>
                 </div>
             </div>

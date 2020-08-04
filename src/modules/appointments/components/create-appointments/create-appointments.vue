@@ -21,7 +21,7 @@
         <h5 class="text-left mt-2">Time</h5>
         <div class="mt-3 row time-picker">
             <div class="col-4" v-for="(time,idx) in timePicker" :key="idx" >
-               <a role="button" @click="setTime(time)">{{time}}</a>
+               <a role="button" :class="{'active-timer':bookingTime === time}" @click="setTime(time)">{{time}}</a>
             </div>
         </div>
 

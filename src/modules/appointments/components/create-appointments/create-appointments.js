@@ -1,4 +1,4 @@
-import RestResource from '../../services/appointments.service'
+import services from '../../services/appointments.service'
 
 export default {
     name: "create-appointments",
@@ -18,8 +18,8 @@ export default {
         }
     },
     created() {
-        // init new class from service to use it //
-        this.service = new RestResource();
+        // using singleton service //
+        this.service = services;
     },
     mounted() {
         // using service layer to call axios to get json file with data //
