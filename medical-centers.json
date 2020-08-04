@@ -1,0 +1,37 @@
+{
+  "medical_centers": [
+    {
+      "id": "1",
+      "name": "TrueDoc24x7 USA",
+      "address": "785  Heavens Way, Sarasota, Florida",
+      "phone": "012345",
+      "services": [
+        "live virtual consultation",
+        "body vitals measurments",
+        "composition measures"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "TrueDoc24x7 Dubai",
+      "address": "4521  Despard Street, Atlanta, Georgia",
+      "phone": "012345",
+      "services": [
+        "Laboratory",
+        "Radiology",
+        "Chronic medication"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "TrueDoc24x7 Egypt",
+      "address": "2001  Morris Street, Fowlerton, Texas",
+      "phone": "012345",
+      "services": [
+        "Maternity",
+        "Optical",
+        "Pre-existing cases"
+      ]
+    }
+  ]
+}
